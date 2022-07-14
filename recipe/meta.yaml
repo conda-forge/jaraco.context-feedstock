@@ -1,5 +1,5 @@
 {% set name = "jaraco.context" %}
-{% set version = "4.1.1" %}
+{% set version = "4.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f0d4d82ffbbbff680384eba48a32a3167f12a91a30a7db56fd97b87e73a87241
+  sha256: a58e94dd67871639abc091b57d32842449b230777570ef2bcec3dc16b912613e
 
 build:
   noarch: python
