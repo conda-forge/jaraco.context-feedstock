@@ -11,17 +11,18 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
     - setuptools >=56
     - setuptools_scm >=3.4.1
   run:
-    - python >=3.6
+    - python >=3.8
+    - backports.tarfile
 
 test:
   imports:
